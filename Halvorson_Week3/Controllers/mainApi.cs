@@ -44,9 +44,21 @@ namespace Halvorson_Week3.Controllers
                 sList.Add(counter + " Current Standart Deviation: " + result);
             }
             Console.WriteLine("Sum: " + sum);
+            loggingObject(lint);
 
             return sList;
         }
+
+
+        void loggingObject(List<int> input)
+        {
+
+            foreach(int i in input)
+            {
+                Console.WriteLine(i.ToString());
+            }
+        }
+
     }
 
 }
